@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="countdown-container">
+    <h2>Masansa Bersolawat!</h2>
+    <div id="timer">
+        <div class="time-segment">
+            <span id="days">00</span>
+            <p>Hari</p>
+        </div>
+        <div class="time-segment">
+            <span id="hours">00</span>
+            <p>Jam</p>
+        </div>
+        <div class="time-segment">
+            <span id="minutes">00</span>
+            <p>Menit</p>
+        </div>
+        <div class="time-segment">
+            <span id="seconds">00</span>
+            <p>Detik</p>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+            background: rgb(205, 152, 88); /* Police stripes background */
+            color: rgb(241, 230, 230); /* Text color */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center; /* Center all text */
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            text-align: center;
+            animation: bounceIn 1.5s ease-out;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        h3 {
+            animation: slideInLeft 1s ease-out 0.5s both;
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    .countdown-container {
+    text-align: center;
+    background: rgba(43, 38, 38, 0.717);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.time-segment {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 70px;
+}
+
+.time-segment span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.time-segment p {
+    font-size: 0.8rem;
+    margin: 0;
+
+}
+.container2 {
+            background: #a11e1ea3; /* Police stripes */
+            padding: 60px;
+            border-radius: 50px;
+            margin-top: 20px;
+            animation: zoomIn 1.2s ease-out 0.3s both;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        img {
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        img:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        
+</style>
+
+<div class="container2">
+    <h1 style="color: white; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Bagian Jadwal</h1>
+<img src="images/WhatsApp Image 2026-01-03 at 10.36.15.jpeg"  alt="Gambar 2" width="400" height="400" style="border: 6px solid rgb(60, 59, 59);" >
+</div>
+<script src="js.js"></script>
+</body>
+</html>

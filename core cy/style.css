@@ -1,0 +1,35 @@
+.countdown-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.time-segment {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 70px;
+}
+
+.time-segment span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.time-segment p {
+    font-size: 0.8rem;
+    margin: 0;
+}
